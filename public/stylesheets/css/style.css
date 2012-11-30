@@ -215,4 +215,6 @@ body {
   float: left;
   width: 100%;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  background: url(../../images/highlight.png) center -230px no-repeat;
+  min-height: 410px; }
