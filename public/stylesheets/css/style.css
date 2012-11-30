@@ -180,6 +180,26 @@ body {
   background: #dff1e4;
   color: #84695b; }
 
+body {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+
+.primaryHeading {
+  text-align: center;
+  margin: 60px 0; }
+
+.primaryHeading-noun,
+.primaryHeading-verb {
+  display: block; }
+
+.primaryHeading-noun {
+  font-family: "Parisienne", cursive;
+  color: #008b7f;
+  font-size: 36px;
+  line-height: 40px; }
+
+.primaryHeading-verb {
+  font-size: 18px; }
+
 #container {
   zoom: 1;
   margin-left: auto;
