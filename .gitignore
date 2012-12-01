@@ -3,3 +3,6 @@
 
 # SASS
 .sass-cache/
+
+# NPM
+node_modules/
