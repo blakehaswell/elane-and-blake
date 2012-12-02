@@ -11,6 +11,7 @@ Install Git
 
 Install Node
 
+    cd ~
     git clone git://github.com/joyent/node.git
     cd node
     git checkout v0.8.15
@@ -20,6 +21,7 @@ Install Node
 
 Install NPM
 
+    cd ~
     git clone https://github.com/isaacs/npm.git
     cd npm
     sudo make install
@@ -41,3 +43,12 @@ Install dependencies
 Start the app (maybe using Forever?)
 
     node app
+
+Install questions
+-----------------
+
+Where should I be installing Node and NPM?
+What is make? Do I need to install it?
+When installing Node, what do the lines `./configure` and `make` do?
+What's the deal with port forwarding? Best practice? Security?
+Running the app – do I use forever? Is `node app` ok?
