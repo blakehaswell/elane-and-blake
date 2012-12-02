@@ -47,8 +47,8 @@ Start the app (maybe using Forever?)
 Install questions
 -----------------
 
-Where should I be installing Node and NPM?
-What is make? Do I need to install it?
-When installing Node, what do the lines `./configure` and `make` do?
-What's the deal with port forwarding? Best practice? Security?
-Running the app – do I use forever? Is `node app` ok?
+*   Where should I be installing Node and NPM?
+*   What is make? Do I need to install it?
+*   When installing Node, what do the lines `./configure` and `make` do?
+*   What's the deal with port forwarding? Best practice? Security?
+*   Running the app – do I use forever? Is `node app` ok?
