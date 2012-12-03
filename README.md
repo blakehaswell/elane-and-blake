@@ -9,6 +9,8 @@ Install Git
 
     apt-get install git
 
+Install and configure apache
+
 Install Node
 
     cd ~
@@ -26,29 +28,29 @@ Install NPM
     cd npm
     sudo make install
 
-Setup port forwarding
-
-    iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to 3000
-
 Clone repo
 
-    cd /var/sites
-    git clone xxx@xxxxxxxx.xxxx.xxx
+    cd /var/www
+    git clone git://github.com/blakehaswell/elane-and-blake.git elaneandblake.com
 
 Install dependencies
 
-    cd elane-and-blake
+    cd elaneandblake.com
     npm install
 
-Start the app (maybe using Forever?)
+Install Forever
 
-    node app
+    sudo npm install -g forever
+
+Start the app using Forever
+
+    forever start app.js
 
 Install questions
 -----------------
 
 *   Where should I be installing Node and NPM? **It doesn't matter, make installs the compiled programs elsewhere**
 *   What is make? Do I need to install it? **make is like rake, just for C (I think)**
-*   When installing Node, what do the lines `./configure` and `make` do?
+*   When installing Node, what do the lines `./configure` and `make` do? **`./configure` builds the makefile**
 *   What's the deal with port forwarding? Best practice? Security? **Use Apache in front of Node**
 *   Running the app – do I use forever? Is `node app` ok? **Forever seems to be the go. `sudo npm install -g forever`**
