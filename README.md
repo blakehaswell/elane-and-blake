@@ -9,7 +9,7 @@ Install Git
 
     apt-get install git
 
-Install and configure apache
+Install and configure apache (vhosts, permissions, etc?)
 
 Install Node
 
@@ -54,3 +54,12 @@ Install questions
 *   When installing Node, what do the lines `./configure` and `make` do? **`./configure` builds the makefile**
 *   What's the deal with port forwarding? Best practice? Security? **Use Apache in front of Node**
 *   Running the app – do I use forever? Is `node app` ok? **Forever seems to be the go. `sudo npm install -g forever`**
+
+Update Instructions
+===================
+
+Log into EC2 and:
+
+    cd /var/www/elaneandblake.com
+    git pull
+    forever restart app.js
