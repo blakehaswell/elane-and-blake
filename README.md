@@ -11,6 +11,46 @@ Install Git
 
 Install and configure apache (vhosts, permissions, etc?)
 
+    sudo apt-get install apache2
+
+Edit your Apache config
+
+    nano /etc/apache2/apache2.conf
+
+Ensure the following config:
+
+    Include conf/extra/httpd-vhosts.conf
+    
+    # Ensure that Apache listens on port 80
+    Listen 80
+    
+    # All requests are virtual host requests (security? best practice?)
+    NameVirtualHost *:*
+
+Add a vhost entry for the site
+
+    cd /etc/apache2/sites-available
+    touch elaneandblake.com
+    nano elaneandblake.com
+
+    <VirtualHost *>
+        DocumentRoot /var/www/elaneandblake.com
+        
+        ServerName elaneandblake.com
+        ServerAlias www.elaneandblake.com
+        
+        ErrorLog "logs/elaneandblake.com/error_log"
+        CustomLog "logs/elaneandblake.com/access_log" common
+    </VirtualHost>
+
+Create a symlink to sites-enabled
+
+    ln -s /etc/apache2/sites-available/elaneandblake.com /etc/apache2/sites-enabled/elaneandblake.com
+
+Restart Apache
+
+    sudo /etc/init.d/apache2 restart
+
 Install Node
 
     cd ~
@@ -40,7 +80,7 @@ Install dependencies
 
 Install Forever
 
-    sudo npm install -g forever
+    sudo npm install forever -g
 
 Start the app using Forever
 
