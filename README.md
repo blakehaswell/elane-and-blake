@@ -33,6 +33,8 @@ Add a vhost entry for the site
     touch elaneandblake.com
     nano elaneandblake.com
 
+Add the following:
+
     <VirtualHost *>
         DocumentRoot /var/www/elaneandblake.com
         
