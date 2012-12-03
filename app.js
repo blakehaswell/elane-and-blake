@@ -2,6 +2,7 @@ var express = require("express");
 var app = express();
 
 // I like EJS. :-)
+// TODO Switch to QEJS: https://github.com/jepso/QEJS
 app.set("view engine", "ejs");
 
 // Serve static assets.
