@@ -43,11 +43,15 @@ Add the following:
         
         ErrorLog "logs/elaneandblake.com/error_log"
         CustomLog "logs/elaneandblake.com/access_log" common
+        
+        # Forward requests to the Node app.
+        ProxyPass / http://127.0.0.1:3000/
+        ProxyPassReverse / http://127.0.0.1:3000/
     </VirtualHost>
 
 Create a symlink to sites-enabled
 
-    ln -s /etc/apache2/sites-available/elaneandblake.com /etc/apache2/sites-enabled/elaneandblake.com
+    a2ensite elaneandblake.com
 
 Restart Apache
 
