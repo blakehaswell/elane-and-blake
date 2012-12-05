@@ -7,7 +7,7 @@ I'm hosting this on EC2, so the setup looks like this:
 
 Install Git
 
-    apt-get install git
+    sudo apt-get install git
 
 Install and configure apache (vhosts, permissions, etc?)
 
@@ -15,7 +15,7 @@ Install and configure apache (vhosts, permissions, etc?)
 
 Edit your Apache config
 
-    nano /etc/apache2/apache2.conf
+    sudo nano /etc/apache2/apache2.conf
 
 Ensure the following config:
 
@@ -27,11 +27,18 @@ Ensure the following config:
     # All requests are virtual host requests (security? best practice?)
     NameVirtualHost *:*
 
+Enable proxy modules
+
+    sudo apt-get install libapache2-mod-proxy-html
+    
+    sudo a2enmod proxy
+    sudo a2enmod proxy_http
+
 Add a vhost entry for the site
 
     cd /etc/apache2/sites-available
-    touch elaneandblake.com
-    nano elaneandblake.com
+    sudo touch elaneandblake.com
+    sudo nano elaneandblake.com
 
 Add the following:
 
@@ -41,8 +48,8 @@ Add the following:
         ServerName elaneandblake.com
         ServerAlias www.elaneandblake.com
         
-        ErrorLog "logs/elaneandblake.com/error_log"
-        CustomLog "logs/elaneandblake.com/access_log" common
+        ErrorLog "/var/log/apache2/elaneandblake.com/error_log"
+        CustomLog "/var/log/apache2/elaneandblake.com/access_log" common
         
         # Forward requests to the Node app.
         ProxyPass / http://127.0.0.1:3000/
@@ -53,9 +60,15 @@ Create a symlink to sites-enabled
 
     a2ensite elaneandblake.com
 
+Create log files
+
 Restart Apache
 
     sudo /etc/init.d/apache2 restart
+
+
+
+    sudo apt-get install build-essential
 
 Install Node
 
@@ -77,12 +90,12 @@ Install NPM
 Clone repo
 
     cd /var/www
-    git clone git://github.com/blakehaswell/elane-and-blake.git elaneandblake.com
+    sudo git clone git://github.com/blakehaswell/elane-and-blake.git elaneandblake.com
 
 Install dependencies
 
     cd elaneandblake.com
-    npm install
+    sudo npm install
 
 Install Forever
 
