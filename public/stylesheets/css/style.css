@@ -229,7 +229,20 @@ body {
           margin-left: -3px; }
 
 .heroImage {
-  margin-top: -20px; }
+  margin: -20px 0 30px; }
+
+@media (min-width: 481px) {
+  .weddingInfo dl {
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px; } }
+.weddingInfo dl dt {
+  font-weight: bold;
+  border-bottom: 1px solid rgba(132, 105, 91, 0.1);
+  margin-bottom: 10px; }
+.weddingInfo dl dd {
+  margin-bottom: 30px; }
 
 #container {
   zoom: 1;

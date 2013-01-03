@@ -1,0 +1,17 @@
+.weddingInfo {
+    dl {
+        @include mq-small-tablet-and-up {
+            @include gridColumn(6);
+        }
+        
+        dt {
+            font-weight: bold;
+            border-bottom: 1px solid transparentize($brown, 0.9);
+            margin-bottom: 10px;
+        }
+    
+        dd {
+            margin-bottom: 30px;
+        }
+    }
+}
