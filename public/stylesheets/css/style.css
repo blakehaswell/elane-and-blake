@@ -183,6 +183,14 @@ body {
 body {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
 
+.h1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold; }
+
+.readingCopy > p {
+  margin: 10px 0; }
+
 .primaryHeading {
   text-align: center;
   margin: 60px 0 30px; }
@@ -201,7 +209,7 @@ body {
   font-size: 18px; }
 
 .nav {
-  margin: 30px 0;
+  margin: 30px 0 20px;
   line-height: 40px;
   text-align: center;
   border: solid rgba(132, 105, 91, 0.3);
@@ -226,10 +234,10 @@ body {
           bottom: 0;
           border: 6px solid;
           border-color: transparent transparent rgba(132, 105, 91, 0.3);
-          margin-left: -3px; }
+          margin-left: -6px; }
 
 .heroImage {
-  margin: -20px 0 30px; }
+  margin: -10px 0 30px; }
 
 @media (min-width: 481px) {
   .weddingInfo dl {
@@ -243,6 +251,71 @@ body {
   margin-bottom: 10px; }
 .weddingInfo dl dd {
   margin-bottom: 30px; }
+
+.accommodationInfoList {
+  margin: 20px 0; }
+
+.accommodationInfo {
+  padding: 10px 0;
+  border-top: 1px solid rgba(132, 105, 91, 0.1); }
+  .accommodationInfo:first-child {
+    border-top: none; }
+  .accommodationInfo > a {
+    display: block; }
+
+.accommodationInfo-distance {
+  float: right;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #9f8273; }
+
+.accommodationInfo-heading {
+  font-weight: bold;
+  color: #008b7f;
+  text-decoration: underline; }
+
+.accommodationInfo-price {
+  font-size: 12px;
+  color: #9f8273; }
+
+.rating {
+  text-indent: -9999px;
+  width: 100px;
+  overflow: hidden;
+  margin: 0 -3px; }
+  .rating, .rating:before {
+    background-image: url("../../images/stars.png");
+    height: 20px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      .rating, .rating:before {
+        background-image: url("../../images/stars@2x.png");
+        -webkit-background-size: 20px 40px;
+        -moz-background-size: 20px 40px;
+        background-size: 20px 40px; } }
+  .rating:before {
+    content: '';
+    display: block;
+    background-position: 0 -20px; }
+  .rating.rating-0-5:before {
+    width: 10px; }
+  .rating.rating-1:before {
+    width: 20px; }
+  .rating.rating-1-5:before {
+    width: 30px; }
+  .rating.rating-2:before {
+    width: 40px; }
+  .rating.rating-2-5:before {
+    width: 50px; }
+  .rating.rating-3:before {
+    width: 60px; }
+  .rating.rating-3-5:before {
+    width: 70px; }
+  .rating.rating-4:before {
+    width: 80px; }
+  .rating.rating-4-5:before {
+    width: 90px; }
+  .rating.rating-5:before {
+    width: 100px; }
 
 #container {
   zoom: 1;

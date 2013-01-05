@@ -12,4 +12,8 @@ app.get("/", function (req, res) {
     res.render("index");
 });
 
+app.get("/accommodation/", function (req, res) {
+    res.render("accommodation");
+});
+
 app.listen(3000);

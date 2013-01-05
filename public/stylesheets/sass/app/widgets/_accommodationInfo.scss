@@ -1,0 +1,35 @@
+.accommodationInfoList {
+    margin: 20px 0;
+}
+
+.accommodationInfo {
+    padding: 10px 0;
+    border-top: 1px solid transparentize($brown, 0.9);
+    
+    &:first-child {
+        border-top: none;
+    }
+    
+    > a {
+        display: block;
+    }
+}
+
+.accommodationInfo-distance {
+    float: right;
+    margin-left: 10px;
+    
+    font-size: 12px;
+    color: lighten($textColour, 10%);
+}
+
+.accommodationInfo-heading {
+    font-weight: bold;
+    color: $headingColour;
+    text-decoration: underline;
+}
+
+.accommodationInfo-price {
+    font-size: 12px;
+    color: lighten($textColour, 10%);
+}
