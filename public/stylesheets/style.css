@@ -177,7 +177,7 @@ pre {
   word-wrap: break-word; }
 
 body {
-  background: #dff1e4 url(../../images/background.png);
+  background: #dff1e4 url(../images/background.png);
   color: #84695b; }
 
 body {
@@ -284,11 +284,11 @@ body {
   overflow: hidden;
   margin: 0 -3px; }
   .rating, .rating:before {
-    background-image: url("../../images/stars.png");
+    background-image: url("../images/stars.png");
     height: 20px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       .rating, .rating:before {
-        background-image: url("../../images/stars@2x.png");
+        background-image: url("../images/stars@2x.png");
         -webkit-background-size: 20px 40px;
         -moz-background-size: 20px 40px;
         background-size: 20px 40px; } }
@@ -333,5 +333,5 @@ body {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  background: url(../../images/highlight.png) center -230px no-repeat;
+  background: url(../images/highlight.png) center -230px no-repeat;
   min-height: 410px; }
