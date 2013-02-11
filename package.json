@@ -3,8 +3,15 @@
     "description": "My fiance and I are getting married, so I'm building us a wedding website.",
     "version": "0.0.1",
     "private": true,
+    "scripts": {
+        "start": "node_modules/.bin/nodemon app.js"
+    },
     "dependencies": {
+        "nodemon" : "0.7.2",
         "express": "3.0.3",
-        "ejs": "0.8.3"
+        "ejs": "0.8.3",
+        "grunt": "0.4.0rc6",
+        "grunt-contrib-sass": "git://github.com/gruntjs/grunt-contrib-sass.git#aa0f821697e3f1a5046ae4ed50e9358967d9bdd7",
+        "grunt-contrib-watch": "0.1.4"
     }
 }
