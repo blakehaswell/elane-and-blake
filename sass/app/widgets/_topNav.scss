@@ -1,3 +1,34 @@
 .topNav {
+    padding: 0 10%;
+
+    color: $white;
+    text-shadow: 0 -1px darken($brown, 5%);
+
     display: none;
+
+    @media (min-width: pxToRem(960)) {
+        display: block;
+    }
+
+    li {
+        display: inline-block;
+
+        &:before {
+            display: inline-block;
+            content: "\00B7";
+        }
+
+        &:first-child {
+            margin-left: -#{pxToRem(20)};
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    a {
+        display: inline-block;
+        padding: pxToRem(15) pxToRem(20);
+    }
 }
