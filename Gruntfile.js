@@ -5,7 +5,8 @@ module.exports = function (grunt) {
         sass: {
             options: {
                 style: 'compressed',
-                precision: 5
+                precision: 5,
+                require: 'sass-globbing'
             },
             all: {
                 files: {

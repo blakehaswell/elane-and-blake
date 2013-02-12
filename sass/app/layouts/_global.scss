@@ -1,0 +1,19 @@
+.l-container {
+    background-color: $mint;
+    background-image: url(../images/background.png);
+}
+
+.l-innerContainer {
+    background-color: $white;
+    background-image: -webkit-linear-gradient(left, darken($white, 2%) 0%, $white 10%, $white 90%, darken($white, 2%) 100%);
+    box-shadow: 0 0 5px transparentize($black, 0.8);
+
+    @media (min-width: pxToRem(960)) {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.l-body {
+    margin: 0 10%;
+}
