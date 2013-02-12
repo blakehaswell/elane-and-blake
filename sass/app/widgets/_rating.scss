@@ -11,7 +11,7 @@ $ratingHeight: 20px;
     
     &,
     &:before {
-        @include backgroundImageRetina("../../images/stars", $ratingWidth, $ratingHeight * 2);
+        @include backgroundImageRetina("../images/stars", $ratingWidth, $ratingHeight * 2);
         
         height: $ratingHeight;
     }
