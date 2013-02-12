@@ -26,5 +26,33 @@
 .l-nav {
     @include linearGradient(lighten($brown, 10%), $brown);
 
+    box-shadow: 0 1px 1px transparentize($black, 0.8);
     min-height: pxToRem(10);
+
+    @media (min-width: pxToRem(960)) {
+        margin: 0 -5px;
+        padding: 0 5px;
+
+        position: relative;
+
+        &:before,
+        &:after {
+            @include generatedContent;
+            @include positionAbs($bottom: -4px);
+            @include square(0);
+
+            border: 2px solid transparent;
+            border-top-color: darken($brown, 10%);
+        }
+
+        &:before {
+            left: 1px;
+            border-right-color: darken($brown, 10%);
+        }
+
+        &:after {
+            right: 1px;
+            border-left-color: darken($brown, 10%);
+        }
+    }
 }
