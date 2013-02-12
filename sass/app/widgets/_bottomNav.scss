@@ -1,0 +1,23 @@
+.bottomNav {
+    background-color: $brown;
+    color: $white;
+    text-shadow: 0 -1px darken($brown, 5%);
+
+    li {
+        //border-top: 1px solid transparentize($white, 0.8);
+
+        &:first-child {
+            border-top: none;
+        }
+    }
+
+    a {
+        @include linearGradient(lighten($brown, 10%), $brown);
+
+        display: block;
+        padding: pxToRem(10) 10%;
+
+        border-top: 1px solid lighten($brown, 15%);
+        border-bottom: 1px solid darken($brown, 5%);
+    }
+}

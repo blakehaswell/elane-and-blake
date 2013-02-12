@@ -1,5 +1,5 @@
 .logo {
-    margin: pxToRem(20) 0;
+    padding: pxToRem(20) 0;
 
     @media (min-width: pxToRem(960)) {
         float: left;

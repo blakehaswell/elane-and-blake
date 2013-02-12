@@ -20,5 +20,11 @@
 }
 
 .l-header {
-    overflow: hidden;
+    @include clearfix;
+}
+
+.l-nav {
+    @include linearGradient(lighten($brown, 10%), $brown);
+
+    min-height: pxToRem(10);
 }

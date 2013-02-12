@@ -24,16 +24,11 @@
                 </h1>
             </div>
 
-            <div class="l-body">
+            <div class="l-nav">
+                <%- render("partials/nav.html", { className: 'topNav' }) %>
+            </div>
 
-                <ul class="nav">
-                    <li>
-                        <a class="is-active" href="/">The Wedding</a>
-                    </li>
-                    <li>
-                        <a href="/accommodation/">Accommodation</a>
-                    </li>
-                </ul>
+            <div class="l-body">
 
                 <div class="heroImage">
                     <img src="/images/hero-image.jpg" width="640" height="237" alt="" />
@@ -53,6 +48,10 @@
                     </dl>
                 </div>
 
+            </div>
+
+            <div class="l-footer">
+                <%- render("partials/nav.html", { className: 'bottomNav' }) %>
             </div>
 
         </div>
