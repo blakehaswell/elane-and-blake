@@ -1,19 +1,20 @@
-var express = require("express");
+var express = require('express');
 var app = express();
+var engines = require('consolidate');
 
-// I like EJS. :-)
-// TODO Switch to QEJS: https://github.com/jepso/QEJS
-app.set("view engine", "ejs");
+// I like QEJS. :-)
+app.engine('html', engines.qejs);
+app.set('view engine', 'qejs');
 
 // Serve static assets.
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + '/public'));
 
-app.get("/", function (req, res) {
-    res.render("index");
+app.get('/', function (req, res) {
+    res.render('index.html');
 });
 
-app.get("/accommodation/", function (req, res) {
-    res.render("accommodation");
+app.get('/accommodation/', function (req, res) {
+    res.render('accommodation.html');
 });
 
 app.listen(3000);
