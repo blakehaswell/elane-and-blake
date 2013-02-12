@@ -1,0 +1,24 @@
+.logo {
+    margin: pxToRem(20) 0;
+
+    @media (min-width: pxToRem(960)) {
+        float: left;
+    }
+}
+
+.logo-name,
+.logo-tagline {
+    display: block;
+    text-align: center;
+}
+
+.logo-name {
+    @include fontSize(36, 40);
+
+    color: $teal;
+    font-family: $altFontFamily;
+}
+
+.logo-tagline {
+    @include fontSize(18);
+}
