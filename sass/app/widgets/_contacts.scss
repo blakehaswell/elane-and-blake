@@ -1,0 +1,30 @@
+.contacts {
+    margin: -#{pxToRem(10)} 0;
+    text-align: center;
+
+    @media (min-width: pxToRem(640)) {
+        @include clearfix;
+    }
+}
+
+.contacts-item {
+    margin: pxToRem(20) 0;
+
+    @media (min-width: pxToRem(640)) {
+        float: left;
+        width: 50%;
+    }
+}
+
+.contacts-heading {
+    @include fontSize(18);
+
+    font-weight: bold;
+}
+
+.contacts-email {
+    a {
+        color: $teal;
+        text-decoration: underline;
+    }
+}

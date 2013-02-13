@@ -2,5 +2,5 @@
     @include fontSize(24, 30);
 
     font-weight: bold;
-    margin: 0 0 pxToRem(10);
+    margin: pxToRem(10) 0;
 }
