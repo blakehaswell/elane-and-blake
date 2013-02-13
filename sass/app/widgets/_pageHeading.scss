@@ -1,0 +1,6 @@
+.pageHeading {
+    @include fontSize(24, 30);
+
+    font-weight: bold;
+    margin: pxToRem(30) 0 pxToRem(10);
+}
