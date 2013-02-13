@@ -10,7 +10,7 @@
     </div>
 
     <div class="l-nav">
-        <%- render("partials/nav.html", { className: 'topNav' }) %>
+        <%- render("partials/nav.html", { pages: pages, currentPage: currentPage, className: 'topNav' }) %>
     </div>
 
     <div class="l-body">
@@ -20,7 +20,7 @@
     </div>
 
     <div class="l-footer">
-        <%- render("partials/nav.html", { className: 'bottomNav' }) %>
+        <%- render("partials/nav.html", { pages: pages, currentPage: currentPage, className: 'bottomNav' }) %>
     </div>
 
 </div>

@@ -17,7 +17,11 @@ for (var i = 0, l = pages.length; i < l; i++) {
         var page = pages[i];
 
         app.get(page.url, function (req, res) {
-            res.render(page.template, page);
+            var data = {
+                pages: pages,
+                currentPage: page
+            };
+            res.render(page.template, data);
         });
     }());
 }

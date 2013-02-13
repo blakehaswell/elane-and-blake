@@ -1,14 +1,9 @@
 <ul class="<%- className %>">
-    <li>
-        <a class="is-active" href="/">The Wedding</a>
-    </li>
-    <li>
-        <a href="/accommodation/">Nearby Accommodation</a>
-    </li>
-    <li>
-        <a href="/gifts/">Gifts</a>
-    </li>
-    <li>
-        <a href="/contact/">Contact Us</a>
-    </li>
+    <% for(var i = 0, l = pages.length; i < l; i++) { %>
+        <li>
+            <a <% if (pages[i].id === currentPage.id) { %>class="is-active"<% } %> href="<%- pages[i].url %>">
+                <%= pages[i].title %>
+            </a>
+        </li>
+    <% } %>
 </ul>
