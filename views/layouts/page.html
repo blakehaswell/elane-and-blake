@@ -1,0 +1,26 @@
+<% inherits("layouts/base.html") %>
+
+<div class="l-innerContainer">
+
+    <div class="l-header">
+        <h1 class="logo">
+            <span class="logo-name">Elan&egrave; &amp; Blake</span>
+            <span class="logo-tagline">are getting married.</span>
+        </h1>
+    </div>
+
+    <div class="l-nav">
+        <%- render("partials/nav.html", { className: 'topNav' }) %>
+    </div>
+
+    <div class="l-body">
+
+        <%- contents %>
+
+    </div>
+
+    <div class="l-footer">
+        <%- render("partials/nav.html", { className: 'bottomNav' }) %>
+    </div>
+
+</div>
