@@ -1,4 +1,8 @@
 .bottomNav {
+    @media (min-width: pxToRem(960)) {
+        display: none;
+    }
+
     li {
         //border-top: 1px solid transparentize($white, 0.8);
 
@@ -8,13 +12,37 @@
     }
 
     a {
-        @include brownGradient;
-        @include textOnBrownBackground;
+        @include tealGradient;
+        @include textOnTealBackground;
 
         display: block;
         padding: pxToRem(10) 10%;
 
-        border-top: 1px solid lighten($brown, 15%);
-        border-bottom: 1px solid darken($brown, 5%);
+        border-top: 1px solid lighten($teal, 15%);
+        border-bottom: 1px solid darken($teal, 5%);
+
+        &.is-active {
+            position: relative;
+
+            &:before,
+            &:after {
+                @include generatedContent;
+                @include positionAbs($top: 50%, $left: 5%);
+
+                margin-left: -#{pxToRem(2.5)};
+
+                border: pxToRem(5) solid transparent;
+            }
+
+            &:before {
+                border-left-color: darken($teal, 5%);
+                margin-top: -#{pxToRem(6)};
+            }
+
+            &:after {
+                border-left-color: $white;
+                margin-top: -#{pxToRem(5)};
+            }
+        }
     }
 }

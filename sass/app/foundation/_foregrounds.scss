@@ -2,3 +2,8 @@
     color: $white;
     text-shadow: 0 -1px darken($brown, 5%);
 }
+
+@mixin textOnTealBackground {
+    color: $white;
+    text-shadow: 0 -1px darken($teal, 5%);
+}
