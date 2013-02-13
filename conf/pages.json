@@ -3,24 +3,28 @@
         {
             "id": "index",
             "title": "The Wedding",
+            "pageTitle": "Elanè & Blake are getting married",
             "url": "/",
             "template": "index.html"
         },
         {
             "id": "accommodation",
             "title": "Nearby Accommodation",
+            "pageTitle": "Nearby Accommodation | Elanè & Blake",
             "url": "/accommodation/",
             "template": "accommodation.html"
         },
         {
             "id": "gifts",
             "title": "Gifts",
+            "pageTitle": "Gifts | Elanè & Blake",
             "url": "/gifts/",
             "template": "gifts.html"
         },
         {
             "id": "contact",
             "title": "Contact Us",
+            "pageTitle": "Contact Elanè & Blake",
             "url": "/contact/",
             "template": "contact.html"
         }
