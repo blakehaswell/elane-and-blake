@@ -30,5 +30,29 @@
     a {
         display: inline-block;
         padding: pxToRem(15) pxToRem(20);
+
+        &.is-active {
+            position: relative;
+
+            &:before,
+            &:after {
+                @include generatedContent;
+                @include positionAbs($left: 50%);
+
+                border: pxToRem(5) solid transparent;
+
+                margin-left: -#{pxToRem(5)};
+            }
+
+            &:before {
+                bottom: pxToRem(6);
+                border-bottom-color: darken($brown, 5%);
+            }
+
+            &:after {
+                bottom: pxToRem(5);
+                border-bottom-color: $white;
+            }
+        }
     }
 }
