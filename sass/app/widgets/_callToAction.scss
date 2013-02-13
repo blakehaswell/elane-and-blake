@@ -1,0 +1,16 @@
+.callToAction {
+    text-align: center;
+    margin: pxToRem(20) 0;
+
+    .callToAction-button {
+        @include tealGradient;
+        @include textOnTealBackground;
+
+        border: 1px solid $teal;
+        border-radius: 5px;
+        box-shadow: inset 0 1px lighten($teal, 15%);
+        padding: pxToRem(10) pxToRem(20);
+
+        display: inline-block;
+    }
+}

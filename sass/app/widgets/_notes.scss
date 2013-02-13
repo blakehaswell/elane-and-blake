@@ -1,0 +1,7 @@
+.notes {
+    background-color: darken($white, 2%);
+    border: 1px solid darken($white, 15%);
+    border-radius: 5px;
+
+    padding: 0 pxToRem(10);
+}
