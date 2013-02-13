@@ -1,0 +1,4 @@
+@mixin textOnBrownBackground {
+    color: $white;
+    text-shadow: 0 -1px darken($brown, 5%);
+}

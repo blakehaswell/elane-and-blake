@@ -24,7 +24,7 @@
 }
 
 .l-nav {
-    @include linearGradient(lighten($brown, 10%), $brown);
+    @include brownGradient;
 
     box-shadow: 0 1px 1px transparentize($black, 0.8);
     min-height: pxToRem(10);

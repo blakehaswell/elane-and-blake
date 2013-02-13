@@ -1,0 +1,3 @@
+@mixin brownGradient {
+    @include linearGradient(lighten($brown, 10%), $brown);
+}

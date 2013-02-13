@@ -1,8 +1,7 @@
 .topNav {
-    padding: 0 10%;
+    @include textOnBrownBackground;
 
-    color: $white;
-    text-shadow: 0 -1px darken($brown, 5%);
+    padding: 0 10%;
 
     display: none;
 

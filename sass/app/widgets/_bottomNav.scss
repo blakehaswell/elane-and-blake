@@ -1,8 +1,4 @@
 .bottomNav {
-    background-color: $brown;
-    color: $white;
-    text-shadow: 0 -1px darken($brown, 5%);
-
     li {
         //border-top: 1px solid transparentize($white, 0.8);
 
@@ -12,7 +8,8 @@
     }
 
     a {
-        @include linearGradient(lighten($brown, 10%), $brown);
+        @include brownGradient;
+        @include textOnBrownBackground;
 
         display: block;
         padding: pxToRem(10) 10%;
