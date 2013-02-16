@@ -1,0 +1,84 @@
+$ratingWidth: 20px;
+$ratingHeight: 20px;
+
+.rating {
+    @include imageReplacement;
+
+    width: $ratingWidth * 5;
+    overflow: hidden; // This should be unnecessary, but Chrome is being weird.
+
+    margin: 0 -3px; // This is the amount of empty space either side of the stars.
+
+    &,
+    &:before {
+        @include backgroundImageRetina("../../images/stars", $ratingWidth, $ratingHeight * 2);
+
+        height: $ratingHeight;
+    }
+
+    &:before {
+        @include generatedContent;
+
+        background-position: 0 -#{$ratingHeight};
+    }
+
+    &.rating-0-5 {
+        &:before {
+            width: $ratingWidth * 0.5;
+        }
+    }
+
+    &.rating-1 {
+        &:before {
+            width: $ratingWidth * 1;
+        }
+    }
+
+    &.rating-1-5 {
+        &:before {
+            width: $ratingWidth * 1.5;
+        }
+    }
+
+    &.rating-2 {
+        &:before {
+            width: $ratingWidth * 2;
+        }
+    }
+
+    &.rating-2-5 {
+        &:before {
+            width: $ratingWidth * 2.5;
+        }
+    }
+
+    &.rating-3 {
+        &:before {
+            width: $ratingWidth * 3;
+        }
+    }
+
+    &.rating-3-5 {
+        &:before {
+            width: $ratingWidth * 3.5;
+        }
+    }
+
+    &.rating-4 {
+        &:before {
+            width: $ratingWidth * 4;
+        }
+    }
+
+    &.rating-4-5 {
+        &:before {
+            width: $ratingWidth * 4.5;
+        }
+    }
+
+    &.rating-5 {
+        &:before {
+            width: $ratingWidth * 5;
+        }
+    }
+}
