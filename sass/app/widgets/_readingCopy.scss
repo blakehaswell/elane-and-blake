@@ -3,6 +3,24 @@
         margin: pxToRem(10) 0;
     }
 
+    ul {
+        li {
+            margin: pxToRem(10) 0;
+            padding-left: pxToRem(15);
+            position: relative;
+
+            &:before {
+                @include generatedContent;
+                @include positionAbs(0, pxToRem($baseLineHeight / 2));
+
+                border: pxToRem(5) solid transparent;
+                border-left-color: $textColour;
+
+                margin-top: -#{pxToRem(5)};
+            }
+        }
+    }
+
     strong {
         font-weight: bold;
     }
