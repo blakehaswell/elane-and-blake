@@ -60,3 +60,11 @@
 .l-body {
     padding: pxToRem(20) 0;
 }
+
+.l-footer {
+    background-color: transparentize($black, 0.95);
+
+    @media (min-width: pxToRem(960)) {
+        border-top: 1px solid transparentize($black, 0.9);
+    }
+}

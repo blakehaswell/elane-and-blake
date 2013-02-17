@@ -1,0 +1,22 @@
+.simplewebAttribution {
+    @include fontSize(12);
+
+    color: lighten($black, 50%);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+
+    padding: pxToRem(20) 0;
+
+    a {
+        display: inline-block;
+    }
+}
+
+.simplewebAttribution-text {
+    display: block;
+    margin-bottom: pxToRem(5);
+}
+
+.simplewebAttribution-image {
+    @include horizontallyCentred;
+}
