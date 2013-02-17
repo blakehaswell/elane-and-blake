@@ -6,6 +6,15 @@
     }
 }
 
+.logo-centred {
+    padding: pxToRem(40) 0;
+
+    @media (min-width: pxToRem(960)) {
+        float: none;
+        padding: pxToRem(80) 0;
+    }
+}
+
 .logo-name,
 .logo-tagline {
     display: block;

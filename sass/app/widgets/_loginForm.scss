@@ -1,0 +1,34 @@
+.loginForm {
+    padding: 0 0 pxToRem(40);
+
+    @media (min-width: pxToRem(960)) {
+        padding: 0 0 pxToRem(80);
+    }
+}
+
+.loginForm-label {
+    display: none;
+}
+
+.loginForm-input {
+    border: 1px solid darken($white, 15%);
+    border-radius: 5px;
+    padding: pxToRem(10);
+
+    margin-bottom: pxToRem(10);
+
+    @include placeholderStyles {
+        color: lighten($textColour, 20%);
+    }
+}
+
+.loginForm-error {
+    color: $red;
+    margin-bottom: pxToRem(20);
+}
+
+.loginForm-button {
+    @include primaryButton;
+
+    width: 100%;
+}

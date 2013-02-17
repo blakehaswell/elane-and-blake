@@ -1,0 +1,20 @@
+<% inherits("layouts/base.html") %>
+
+<div class="l-loginOuterContainer">
+    <div class="l-loginContainer">
+
+        <h1 class="logo logo-centred">
+            <span class="logo-name">Elan&egrave; &amp; Blake</span>
+            <span class="logo-tagline">are getting married.</span>
+        </h1>
+
+        <form class="loginForm" action="/login/" method="post">
+            <label class="loginForm-label" for="password">Password</label>
+            <input class="loginForm-input" type="text" id="password" name="password" placeholder="Say the magic word&hellip;" autocomplete="off" />
+            <% if (typeof failedValidation !== 'undefined') { %>
+                <p class="loginForm-error">Ah ah ah, you didn’t say the magic word!</p>
+            <% } %>
+            <button class="loginForm-button" type="submit">Open Sesame</button>
+        </form>
+    </div>
+</div>

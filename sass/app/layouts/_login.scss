@@ -1,0 +1,21 @@
+.l-loginOuterContainer {
+    background-color: $white;
+    background-image: -webkit-linear-gradient(left, darken($white, 2%) 0%, $white 10%, $white 90%, darken($white, 2%) 100%);
+    box-shadow: 0 0 5px transparentize($black, 0.8);
+    border-radius: 5px;
+
+    width: 90%;
+    margin: pxToRem(60) auto;
+
+    @media (min-width: pxToRem(960)) {
+        width: 80%;
+    }
+}
+
+.l-loginContainer {
+    padding: 0 10%;
+
+    @media (min-width: pxToRem(960)) {
+        padding: 0 20%;
+    }
+}
