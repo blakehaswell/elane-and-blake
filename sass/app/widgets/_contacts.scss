@@ -39,9 +39,7 @@
 }
 
 .contacts-heading {
-    @include fontSize(18);
-
-    font-weight: bold;
+    @include h2;
 }
 
 .contacts-email {

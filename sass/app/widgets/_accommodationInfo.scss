@@ -19,9 +19,7 @@
 }
 
 .accommodationInfo-heading {
-    @include fontSize(18);
-
-    font-weight: bold;
+    @include h2;
 
     color: $teal;
     text-decoration: underline;
