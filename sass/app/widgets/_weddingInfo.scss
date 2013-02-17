@@ -1,0 +1,16 @@
+.weddingInfo-heading {
+    @include h2;
+}
+
+.weddingInfo-body {
+    margin: pxToRem(10) 0 pxToRem(20);
+}
+
+.weddingInfo-link {
+    margin: -#{pxToRem(10)} 0 pxToRem(20);
+
+    a {
+        color: $teal;
+        text-decoration: underline;
+    }
+}
